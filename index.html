@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel = "stylesheet" href = "form.css"> <!-- For adding Style sheet or CSS File -->
+</head>
+<body>
+ <h2>User Registeration</h2>
+ <form id="form" action="http://localhost:8080/app/print" method="post">
+ 
+  <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="full_name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Gender Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <br><br>
+
+        <!-- Dropdown Selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br><br>
+
+        <!-- Message Textarea -->
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message..."></textarea>
+        <br><br>
+
+        <!-- Submit & Reset Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+ </form>
+ 
+   <input type="button" onclick="window.location.href='sample.html'" value ="click"/>
+ 
+<script type="text/javascript"  src="sample.js">
+
+</script>
+</body>
+</html>
